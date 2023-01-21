@@ -1,13 +1,13 @@
 @import 'variables.css';
 
 body{
-    background: var(--main-bg-color);
+    background: var(--main-lgreen-color);
 }
 
 header{
-    border-bottom: 5px var(--main-hdr-brdr-color) solid;
+    border-bottom: 5px var(--main-dgreen-color) solid;
     height: 150px;
-    background: var(--main-hdr-color);
+    background: var(--main-green-color);
     position: relative;
 
 }

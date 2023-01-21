@@ -1,0 +1,27 @@
+@import 'variables.css';
+
+body{
+    background: var(--main-bg-color);
+}
+
+header{
+    border-bottom: 5px var(--main-hdr-brdr-color) solid;
+    height: 150px;
+    background: var(--main-hdr-color);
+    position: relative;
+
+}
+
+.headlogo{
+    left: 3%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.headtext{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    color: var(--main-hdtxt-color);
+}

@@ -1,0 +1,24 @@
+body{
+    background-color: rgb(80, 211, 167);
+}
+.object{
+    border-bottom: 5px rgb(34, 95, 75) solid;
+    height: 150px;
+    background: rgb(56, 153, 121);
+    position: relative;
+
+}
+
+.logo{
+    left: 3%;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.headp{
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    color: rgb(0, 0, 0);
+}

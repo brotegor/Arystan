@@ -5,11 +5,10 @@ body{
 }
 
 header{
-    border-bottom: 5px var(--main-dgreen-color) solid;
     height: 150px;
     background: var(--main-green-color);
     position: relative;
-
+    border-bottom: 10px var(--main-dgreen-color) solid;
 }
 
 .headlogo{
@@ -24,4 +23,36 @@ header{
     position: absolute;
     left: 50%;
     color: var(--main-hdtxt-color);
+}
+
+ul.nava a,
+ul.navinf a,
+.navinftitle,
+.navatitle{
+    display: block;
+    width: 12em;
+    padding: 20px;
+    background-color: var(--main-green-color);
+    border-top: 3px var(--main-dgreen-color) solid;
+    border-left: 3px var(--main-dgreen-color) solid;
+    border-right: 3px var(--main-dgreen-color) solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: var(--main-hdtxt-color);
+}
+
+.navinftitle,
+.navatitle{
+    font-weight: bold;
+}
+
+ul.nava a:hover,
+ul.navinf a:hover{
+    background-color: var(--main-bgreen-color);
+} 
+
+ul.nava li:last-child a,
+ul.navinf li:last-child a{
+    border-bottom: 3px var(--main-dgreen-color) solid;
 }

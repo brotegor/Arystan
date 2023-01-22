@@ -1,6 +1,7 @@
 :root {
     --main-lgreen-color: rgb(80, 211, 167);
     --main-green-color: rgb(56, 153, 121);
-    --main-dgreen-brdr-color: rgb(56, 153, 121);
+    --main-bgreen-color: rgb(56, 153, 64);
+    --main-dgreen-color: rgb(36, 97, 77);
     --main-txt-color: rgb(0, 0, 0);
   }

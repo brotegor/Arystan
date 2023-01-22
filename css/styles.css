@@ -1,15 +1,14 @@
 @import 'variables.css';
 
 body{
-    background: var(--main-lgreen-color);
+    background: var(--light-green);
 }
 
 header{
-    border-bottom: 5px var(--main-dgreen-color) solid;
     height: 150px;
-    background: var(--main-green-color);
+    background: var(--green);
     position: relative;
-
+    border-bottom: 10px var(--dark-green) solid;
 }
 
 .headlogo{
@@ -23,5 +22,33 @@ header{
     top: 50%;
     position: absolute;
     left: 50%;
-    color: var(--main-hdtxt-color);
+    color: var(--txt-color);
 }
+
+ul.nava a,
+.navatitle{
+    display: block;
+    padding: 20px;
+    background-color: var(--green);
+    border: 3px var(--dark-green) solid;
+    border-radius: 0 10px 10px 0;
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+aside{
+    width: 200px;
+}
+
+.navatitle{
+    font-weight: bold;
+}
+
+ul.nava a {
+    border-top: none;
+}
+
+ul.nava a:hover{
+    background-color: var(--bright-green);
+} 
+

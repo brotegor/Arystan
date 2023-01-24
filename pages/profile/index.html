@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/variables.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/variables.css">
     <link rel="stylesheet" href="styles.css">
+
     <title>Document</title>
 </head>
 <body>
     <main id="main-holder">
-        <h1 id="login-header">Login</h1>
-        
-        <div id="login-error-msg-holder">
-          <p id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-        </div>
-        
-        <form id="login-form">
-          <input type="text" name="username" id="username-field" class="login-form-field" placeholder="Username">
-          <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Password">
-          <input type="submit" value="Login" id="login-form-submit">
-        </form>
+      <h1 id="login-header">Вход</h1> 
+      <form id="login-form">
+        <input type="text" name="username" id="username-field" class="login-form-field" placeholder="E-mail">
+        <input type="password" name="password" id="password-field" class="login-form-field" placeholder="Пароль">
+        <input type="submit" value="Войти" id="login-form-submit">
+      </form>
       
-      </main>
+    </main>
 </body>
 </html>

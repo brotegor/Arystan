@@ -1,0 +1,44 @@
+.wapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-teal);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 400px;
+    padding: 20px;
+    border-radius: 7px;
+    background: white;
+}
+
+.heading {
+    text-align: center;
+    padding: 15px 80px;
+    border-radius: 5px;
+    font-size: 30px;
+    background-color: var(--light-teal);
+}
+
+.input {
+    padding: 0px 0px 5px 5px;
+    border-bottom: 1px solid #3a3a3a;
+    border-radius: 3px;
+
+    &::placeholder {
+        color: #3a3a3a;
+    }
+}
+
+.button {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background: var(--light-teal);
+}

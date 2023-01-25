@@ -1,0 +1,23 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-size: 18px;
+    font-weight: 400;
+    * { font-family: 'Roboto Slab', serif; }
+}
+
+.ibg {
+    position: relative;
+    overflow: hidden;
+    background: #888; // default background
+ 
+    img {
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       object-fit: cover;
+    }
+}

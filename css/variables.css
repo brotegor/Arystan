@@ -1,7 +1,6 @@
 :root {
-    --light-green: rgb(80, 211, 167);
-    --green: rgb(56, 153, 121);
-    --bright-green: rgb(56, 153, 64);
-    --dark-green: rgb(36, 97, 77);
-    --txt-color: rgb(0, 0, 0);
-  }
+  --light-teal: rgb(0, 156, 156);
+  --teal: teal;
+  --dark-teal: rgb(0, 51, 51);
+  --super-light-teal: rgb(189, 252, 252);
+}

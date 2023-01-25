@@ -1,0 +1,71 @@
+@import 'variables.css';
+
+body{
+    background-color: var(--super-light-teal);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--teal);
+    color: #fff;
+}
+    
+.nav-links a {
+    color: #fff;
+}
+
+.logo {
+    color: inherit;
+    font-size: 32px;
+}
+    
+.menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+
+.menu li {
+    padding: 5px 14px;
+    transition: 0.3s ease;
+}
+    
+.menu li:hover {
+    background-color: var(--light-teal);
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+    
+.services {
+    position: relative; 
+}
+    
+.dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+}
+    
+.dropdown li + li {
+    margin-top: 10px;
+}
+    
+.dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+}
+    
+.dropdown li:hover {
+    background-color: var(--light-teal);
+}
+    
+.services:hover .dropdown {
+    display: block;
+}

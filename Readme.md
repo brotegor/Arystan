@@ -1,27 +1,46 @@
-# Порядок работы
-1. Создаем issue, в которой подробно описываем суть проблемы и вешаем лейблы (refactoring, new и т.д.). У этой issue будет свой id. Предположим, это будет xxx.
-2. Чтобы начать работу, нужно создать ветку, которая опирается от main. Для этого сначала переключаемся на ветку main: `git checkout main`. Потом подкачиваем актуальную версию проекта: `git pull`. Потом создаем ветку с именем issue/xxx: `git checkout -b issue/xxx`.
-3. Вносим изменения по issue. Важно отметить, что когда работаем над одной issue, в другие не лезем.
-4. Когда закончили, делаем коммит: `git add . && git commit -m 'description'`. Описание обязательно должно быть осмысленным и отражать суть того, что нового было сделано в коммите! Можно делать несколько коммитов, разделяя их логически на подзадачи.
-5. Чтобы отправить изменения, делаем `git push -u origin issue/xxx`.
-6. После этого создаем pull request с этой веткой. В описании при открытии pr обязательно указываем ссылку на issue! Желательно также написать подробное описание для pr.
+# Getting Started with Create React App
 
-# Именование css классов
-1. Никаких сокращений. Не `hdrtxt`, а `header-text`.
-2. Слова разделяются "-". `side-tabs`, `issue-comment` и т.д.
-3. Не плодим кучу классов с одинаковыми стилями. Если сущность одна и та же, лучше использовать один класс.
-4. Не забываем заносить копипасту в стилях похожих сущностей в общие классы и создавать уточняющие классы для уникальных стилей отдельных сущностей, если есть такая возможность. Например, есть ссылки, и мы хотим первую ссылку сделать жирным шрифтом. В таком случае в html мы создаем несколько ссылок с классом `link`, а первой задаем класс `link main-link`, то есть передаём второй класс, который дополнит стили первого. Пример простоват, но им я лишь хочу напомнить о том, что за таким нужно обязательно следить и держать в голове.
-    ```
-    .link {
-      color: white;
-      font-size: 16px;
-    }
-  
-    .link:hover {
-      color: red;
-    }
-  
-    .main-link {
-      font-weight: bold;
-    }
-    ```
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+The page will reload if you make edits.\
+You will also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).

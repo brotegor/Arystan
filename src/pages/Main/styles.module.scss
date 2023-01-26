@@ -1,0 +1,47 @@
+.main{
+    position: relative;
+}
+
+.mainimage{
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+    width: 100%;
+    height: auto;
+    filter: brightness(40%)
+}
+
+.concepts {
+    position: absolute;
+    background: transparent;
+    z-index: 100;
+}
+
+.concept {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    line-height: 450px;
+    margin: 80px;
+    width: 350px;
+    height: 450px;
+    border-radius: 20px;
+    color: white;
+    background-color: var(--teal);
+    transition: var(--hover);
+    &:hover .a {
+        display: none;
+    }
+    & .b {
+        display: none;
+    }
+    &:hover .b {
+        display: inline;
+        color: #000;
+    }
+    &:hover {
+        background-color: var(--super-light-teal);
+        transition: var(--hover);
+    }
+}
+

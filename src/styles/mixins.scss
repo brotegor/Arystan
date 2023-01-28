@@ -1,0 +1,13 @@
+@mixin visible-element () {
+   visibility: visible;
+   z-index: 1;
+   opacity: 1;
+   transition: var(--hover);
+}
+ 
+ @mixin hidden-element() {
+   visibility: hidden;
+   z-index: -1;
+   opacity: 0;
+   transition: var(--hover);
+}

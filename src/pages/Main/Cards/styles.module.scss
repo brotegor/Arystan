@@ -1,0 +1,39 @@
+@import "../../../styles/mixins.scss";
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  position: relative;
+  z-index: 1;
+}
+
+.card,
+.hoverCard {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  height: 450px;
+  border-radius: 20px;
+}
+
+.card {
+  background: var(--teal);
+  color: white;
+
+  &:hover .hoverCard {
+    @include visible-element();
+    transition: var(--move);
+  }
+}
+
+.hoverCard {
+  @include hidden-element();
+  position: absolute;
+  width: 100%;
+  background: var(--super-light-teal);
+  color: black;
+  transition: var(--move);
+}

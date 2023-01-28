@@ -3,15 +3,13 @@
 .main {
     position: relative;
 }
-
 .mainimage {
     position: absolute;
     min-height: 100%;
     width: 100%;
     height: auto;
-    filter: brightness(40%)
+    filter: brightness(40%);
 }
-
 .concepts {
     position: absolute;
     background: transparent;
@@ -42,20 +40,20 @@
     border-radius: 20px;
     color: white;
     background-color: var(--teal);
-    transition: var(--hover);
+    transition: all 1 ease;
     .hoverText {
         @include hidden-element();
+        color: black;
     }
     &:hover {
+        background-color: var(--super-light-teal);
+        transition: var(--hover);
         .hoverText{
             @include visible-element();
-            color: black;
         }
         .defaultText{
             @include hidden-element();
-        }
-        background-color: var(--super-light-teal);
-        transition: var(--hover);
+        }   
     }
 }
 

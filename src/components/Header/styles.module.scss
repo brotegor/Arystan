@@ -1,6 +1,6 @@
 .header {
     padding: 20px 0;
-    background: var(--teal);
+    background: var(--black-10);
 }
 
 .container {
@@ -10,23 +10,33 @@
 }
 
 .logo {
-    font-size: 32px;
-    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    img {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+    }
+
+    span {
+        font-size: var(--font-subheading-1);
+        color: white;
+    }
 }
     
 .links {
     display: flex;
-    gap: 1em;
+    gap: 40px;
 }
 
 .link {
-    padding: 5px 15px;
-    border-radius: 5px;
-    color: white;
     transition: var(--hover);
 
-    &:hover {
-        background-color: var(--light-teal);
+    &:hover,
+    &:hover span {
+        color: var(--orange-50);
         transition: var(--hover);
     }
 }

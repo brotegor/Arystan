@@ -2,8 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 body {
-    font-size: 18px;
+    font-size: var(--font-text);
     font-weight: 400;
+    background: var(--black-5);
+    color: white;
     * { font-family: 'Roboto Slab', serif; }
 }
 

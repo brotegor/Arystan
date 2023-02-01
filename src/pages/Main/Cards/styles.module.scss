@@ -1,39 +1,51 @@
 @import "../../../styles/mixins.scss";
 
-.cards {
-  display: flex;
-  justify-content: space-between;
-  background: transparent;
-  position: relative;
-  z-index: 1;
+.container {
+  padding: 30px 0 !important;
 }
 
-.card,
-.hoverCard {
-  position: relative;
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: var(--font-heading);
+}
+
+.cards {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 30%;
-  height: 450px;
-  border-radius: 20px;
+  flex-wrap: wrap;
+  gap: 15px;
 }
 
 .card {
-  background: var(--teal);
-  color: white;
-
-  &:hover .hoverCard {
-    @include visible-element();
-    transition: var(--move);
-  }
+  display: flex;
+  justify-content: space-between;
+  width: 32%;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--black-15);
+  gap: 10px;
 }
 
-.hoverCard {
-  @include hidden-element();
-  position: absolute;
-  width: 100%;
-  background: var(--super-light-teal);
-  color: black;
-  transition: var(--move);
+.cardHeading {
+  margin-bottom: 8px;
+  font-size: var(--font-subheading-2);
+}
+
+.cardImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 70px;
+  height: 70px;
+  padding: 12px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background: var(--orange-50) !important;
+
+  img {
+    max-width: 100%;
+  }
 }

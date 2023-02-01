@@ -11,6 +11,6 @@ ul {padding: 0;list-style: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 * {&:focus,&:active {outline: none;}}
 input {box-shadow: none;border: none;}
-textarea {resize: none;}
+textarea {resize: none; color: inherit}
 button {border: none;padding: 0;background: transparent;cursor: pointer;}
-a {text-decoration: none;}
+a {text-decoration: none; color: inherit}

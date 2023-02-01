@@ -1,0 +1,26 @@
+.body {
+  background: var(--black-10);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: calc(100vh - 110px); // 100vh - (height of header)
+}
+
+.heading {
+  font-size: var(--font-heading);
+}
+
+.paragraph {
+  margin-bottom: 10px;
+}
+
+.slider {
+  flex-shrink: 0;
+  width: 670px;
+  height: 440px;
+  background: var(--black-30);
+}

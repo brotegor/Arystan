@@ -1,17 +1,14 @@
-import { Container } from "../../components/Container";
-import { Header } from "../../components/Header";
-import { Cards } from './Cards';
-import background from "../../images/main.jpg";
 import s from './styles.module.scss';
+import { Header } from "../../components/Header";
+import { Fullscreen } from "./Fullscreen";
+import { Cards } from './Cards';
 
 export function Main() {
     return <>
         <Header />
-        <main className={`ibg ${s.main}`}>
-            <Container>
-                <Cards />
-            </Container>
-            <img src={background} alt="background image" className={s.mainimage}/>
-        </main>  
-    </> 
+        <main>
+            <Fullscreen />
+            <Cards />
+        </main>
+    </>;
 }

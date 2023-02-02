@@ -11,7 +11,7 @@ function App() {
     },
     {
       path: RouteLinks.LOGIN,
-      element: <Login />
+      element: <Login />,
     },
   ]);
   

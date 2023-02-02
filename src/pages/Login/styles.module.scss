@@ -1,44 +1,57 @@
-.wapper {
-    min-height: 100vh;
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--dark-teal);
-}
+    gap: 20px;
+    height: calc(100vh - 110px); // 100vh - (height of header)
+  }
 
 .form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    min-width: 400px;
+    align-items: center;
+    width: 40vw;
+    height: 65vh;
     padding: 20px;
     border-radius: 7px;
-    background: white;
+    background: var(--black-15);
 }
 
 .heading {
     text-align: center;
-    padding: 15px 80px;
-    border-radius: 5px;
     font-size: 30px;
-    background-color: var(--light-teal);
 }
 
 .input {
-    padding: 0px 0px 5px 5px;
-    border-bottom: 1px solid #3a3a3a;
+    background: var(--black-10);
     border-radius: 3px;
-
-    &::placeholder {
-        color: #3a3a3a;
-    }
+    text-align: center;
+    color: white;
+    width: 650px;
+    height: 80px;
+    margin-top: 8vh;
 }
 
-.button {
-    width: 100%;
-    padding: 7px;
-    border: none;
+.signIn{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: var(--font-subheading-1);
     border-radius: 5px;
     color: black;
-    background: var(--light-teal);
+    width: 450px;
+    background: var(--orange-50);
+    transition: var(--hover);
+    text-align: center;
+    margin: 5vh;
+    &:hover {
+        background: var(--orange-60);
+        transition: var(--hover);
+    }
+}
+.separator{
+    width: 650px;
+    height: 10px;
+    border-radius: 5px;
+    background: var(--black-10);
+    margin-bottom: 5vh;
 }

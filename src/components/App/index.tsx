@@ -1,7 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { RouteLinks } from '../../types';
 import { Main } from '../../pages/Main'
-import { Login } from '../../pages/Login';
+import { Auth, Login, Registration } from '../../pages/Auth';
 
 function App() {
   const router = createBrowserRouter([
@@ -10,8 +10,17 @@ function App() {
       element: <Main />
     },
     {
-      path: RouteLinks.LOGIN,
-      element: <Login />
+      element: <Auth />,
+      children: [
+        {
+          path: RouteLinks.LOGIN,
+          element: <Login />
+        },
+        {
+          path: RouteLinks.REGISTRATION,
+          element: <Registration />
+        }
+      ]
     },
   ]);
   

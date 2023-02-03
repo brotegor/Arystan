@@ -14,7 +14,7 @@ export function Header() {
                 </Link>
                 <nav>
                     <ul className={s.links}>
-                        <li><Link className={s.link} to='#'>О сервисе</Link></li>
+                        <li><Link className={s.link} to={RouteLinks.PROFILE}>Профиль</Link></li>
                         <li><Link className={s.link} to='#'>Чат</Link></li>
                         <li><Link className={s.link} to='#'>Курсы</Link></li>
                     </ul>

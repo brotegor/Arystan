@@ -2,7 +2,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { RouteLinks } from '../../types';
 import { Main } from '../../pages/Main'
 import { Auth, Login, Registration } from '../../pages/Auth';
-import { Lessons } from '../../pages/Lessons';
+import { Courses } from '../../pages/Cources';
 
 function App() {
   const router = createBrowserRouter([
@@ -24,8 +24,8 @@ function App() {
       ]
     },
     {
-      path: RouteLinks.LESSONS,
-      element: <Lessons />
+      path: RouteLinks.COURCES,
+      element: <Courses />
     },
   ]);
   

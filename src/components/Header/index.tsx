@@ -16,7 +16,7 @@ export function Header() {
                     <ul className={s.links}>
                         <li><Link className={s.link} to='#'>О сервисе</Link></li>
                         <li><Link className={s.link} to='#'>Чат</Link></li>
-                        <li><Link className={s.link} to={RouteLinks.LESSONS}>Уроки</Link></li>
+                        <li><Link className={s.link} to={RouteLinks.COURCES}>Курсы</Link></li>
                     </ul>
                 </nav>
                 <Link className={s.link} to={RouteLinks.LOGIN}>Войти</Link>

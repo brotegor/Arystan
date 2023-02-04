@@ -5,7 +5,7 @@ interface SearchFieldProps {
   setSearch: (search: string) => void
 }
 
-function SearchField({ search, setSearch }: SearchFieldProps) {
+export function SearchField({ search, setSearch }: SearchFieldProps) {
   return (
     <fieldset className={s.search}>
       <input

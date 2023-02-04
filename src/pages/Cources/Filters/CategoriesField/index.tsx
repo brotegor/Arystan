@@ -1,6 +1,5 @@
 import s from './styles.module.scss';
 
-
 interface Category {
   id: number
   name: string
@@ -17,7 +16,7 @@ interface CategoriesFieldProps {
   setCategoryId: (categoryId: number | 'All') => void;
 }
 
-function CategoriesField({ categoryId, setCategoryId }: CategoriesFieldProps) {
+export function CategoriesField({ categoryId, setCategoryId }: CategoriesFieldProps) {
   return (
     <fieldset className={s.categories}>
       <label className={s.category}>

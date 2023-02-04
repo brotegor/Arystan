@@ -1,0 +1,21 @@
+.search {
+  display: flex;
+  width: 300px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 42px;
+  padding-left: 10px;
+  border-radius: 5px 0 0 5px;
+  background: var(--black-15);
+  color: white;
+}
+
+.searchButton {
+  width: 50px;
+  height: 42px;
+  background: var(--black-20);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}

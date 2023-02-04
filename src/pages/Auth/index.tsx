@@ -46,9 +46,15 @@ export function Registration() {
         <form className={s.form}>
             <input
                 className={s.input}
+                type="email"
+                name="email"
+                placeholder="E-mail"
+            />
+            <input
+                className={s.input}
                 type="text"
                 name="username"
-                placeholder="E-mail или Логин"
+                placeholder="Логин"
             />
             <input
                 className={s.input}

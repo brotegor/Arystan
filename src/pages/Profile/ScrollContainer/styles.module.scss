@@ -1,0 +1,17 @@
+.wrapper {
+  padding: 20px;
+  box-sizing: border-box;
+  background: var(--black-15);
+  border-radius: 10px;
+}
+
+.heading {
+  text-align: center;
+  font-size: var(--font-subheading-1);
+  margin-bottom: 10px;
+}
+
+.scrollContainer {
+  overflow: hidden;
+  overflow-y: scroll;
+}

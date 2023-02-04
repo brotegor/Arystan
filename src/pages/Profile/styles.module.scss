@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: calc(100% - 110px);
+  gap: 20px;
+  margin-top: 40px !important;
+  margin-bottom: 40px !important;
+}
+
+.courses {
+  height: calc(100vh - 190px);
+}
+
+.achievements {
+  height: calc(100vh - 443px);
+}
+
+.skeleton {
+  height: 70px;
+  border-radius: 10px;
+  background-color: var(--black-30);
+
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.accountContainer {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 20px;
+}

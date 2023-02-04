@@ -67,11 +67,13 @@ function Filters() {
 
   const [categoryId, setCategoryId] = useState<number | 'All'>('All');
 
+  const [currentLevel, setCurrentLevel] = useState<Level | 'All'>('All');
+
   return (
     <form className={s.filters}>
       <SearchField search={debouncedSearch} setSearch={setSearch} />
       <CategoriesField categoryId={categoryId} setCategoryId={setCategoryId} />
-      <LevelField />
+      <LevelField currentLevel={currentLevel} setCurrentLevel={setCurrentLevel} />
     </form>
   );
 }
@@ -118,7 +120,7 @@ const fakeCategories: Category[] = [
 
 interface CategoriesFieldProps {
   categoryId: number | 'All';
-  setCategoryId: (categoryId: number | 'All') => void
+  setCategoryId: (categoryId: number | 'All') => void;
 }
 
 function CategoriesField({ categoryId, setCategoryId }: CategoriesFieldProps) {
@@ -134,7 +136,7 @@ function CategoriesField({ categoryId, setCategoryId }: CategoriesFieldProps) {
           name="category"
           value="All"
           checked={categoryId === 'All'}
-          onChange={onChange}
+          onChange={() => setCategoryId('All')}
         />
         Все
       </label>
@@ -155,12 +157,44 @@ function CategoriesField({ categoryId, setCategoryId }: CategoriesFieldProps) {
 }
 
 // Level -------------------------------------------------
-function LevelField() {
+interface LevelFieldProps {
+  currentLevel: Level | 'All';
+  setCurrentLevel: (levelId: Level | 'All') => void;
+}
+
+const fakeLevels: Level[] = [
+  { id: 1, name: "Базовый", color: "green" },
+  { id: 2, name: "Средний", color: "yellow" },
+  { id: 3, name: "Продвинутый", color: "red" },
+];
+
+interface Level {
+  id: number;
+  name: string;
+  color: string;
+}
+
+function LevelField({ currentLevel, setCurrentLevel }: LevelFieldProps) {
+  console.log(currentLevel)
   return (
-    <select className={s.level} name="level">
-      <option value="1">Базовый</option>
-      <option value="2">Средний</option>
-      <option value="3">Продвинутый</option>
+    <select style={{background: currentLevel !== 'All' ? currentLevel.color : 'var(--black-15)'}} className={s.level} name="level">
+      <option 
+          onChange={() => setCurrentLevel('All')} 
+          selected={currentLevel === 'All'} 
+          value= 'All'
+        >
+          Все уровни
+        </option>
+      {fakeLevels.map(level => (
+        <option 
+          onChange={() => setCurrentLevel(level)} 
+          selected={currentLevel !== 'All' && level.id === currentLevel.id} 
+          value={level.id}
+          style={{background: level.color}}
+        >
+          {level.name}
+        </option>
+      ))}
     </select>
   );
 }

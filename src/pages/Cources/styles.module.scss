@@ -1,0 +1,29 @@
+.wrapper {
+  background: var(--black-10);
+  margin-top: 20px;
+}
+
+.container {
+  padding: 50px 0 !important;
+  background: var(--black-10);
+}
+
+.heading {
+  margin-bottom: 50px;
+  font-size: var(--font-heading);
+  text-align: center;
+}
+
+.sectionHeading {
+  font-size: var(--font-subheading-1);
+  margin: 40px 0 20px 0;
+}
+
+.courcesContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--black-15);
+}

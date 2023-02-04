@@ -6,7 +6,7 @@
   color: black;
   background: var(--orange-50);
   transition: var(--hover);
-
+  text-align: center;
   &:hover {
     background: var(--orange-60);
     transition: var(--hover);

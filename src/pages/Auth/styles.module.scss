@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 110px); // 100vh - (height of header)
+}
+
+.formWrapper {
+    width: 500px;
+}
+
+.tabs {
+    display: flex;
+}
+
+.tab {
+    display: block;
+    width: 50%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: var(--font-subheading-1);
+    background: var(--black-10);
+
+    &[aria-current="page"] {
+        background: var(--black-15);
+    }
+
+    &:nth-child(1) {
+        border-radius: 7px 0 0 0;
+    }
+
+    &:nth-child(2) {
+        border-radius: 0 7px 0 0;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    align-items: center;
+    border-radius: 0 0 7px 7px;
+    background: var(--black-15);
+}
+
+.input {
+    display: block;
+    width: 80%;
+    padding: 10px 0;
+    text-align: center;
+    border-radius: 3px;
+    color: white;
+    background: var(--black-10);
+}
+
+.signIn {
+    display: block;
+    width: 50%;
+    padding: 10px 15px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: var(--font-subheading-1);
+    background: var(--orange-50);
+    color: black;
+    transition: var(--hover);
+    
+    &:hover {
+        background: var(--orange-60);
+        transition: var(--hover);
+    }
+}
+
+.separator {
+    width: 100%;
+    height: 3px;
+    background: var(--black-10);
+}
+
+.link {
+    transition: var(--hover);
+
+    &:hover {
+        color: var(--orange-50);
+        transition: var(--hover);
+    }
+}

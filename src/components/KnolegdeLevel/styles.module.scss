@@ -1,0 +1,16 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px;
+  background: var(--black-15);
+  border-radius: 10px;
+}
+
+.level {
+  margin-left: 10px;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  border-radius: 5px;
+  color: black;
+}

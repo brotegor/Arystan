@@ -1,7 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { RouteLinks } from '../../types';
 import { Main } from '../../pages/Main'
-import { Login } from '../../pages/Login';
+import { Auth, Login, Registration } from '../../pages/Auth';
+import { Courses } from '../../pages/Cources';
 import { Profile } from '../../pages/Profile';
 
 function App() {
@@ -11,8 +12,21 @@ function App() {
       element: <Main />
     },
     {
-      path: RouteLinks.LOGIN,
-      element: <Login />
+      element: <Auth />,
+      children: [
+        {
+          path: RouteLinks.LOGIN,
+          element: <Login />
+        },
+        {
+          path: RouteLinks.REGISTRATION,
+          element: <Registration />
+        }
+      ]
+    },
+    {
+      path: RouteLinks.COURCES,
+      element: <Courses />
     },
     {
       path: RouteLinks.PROFILE,

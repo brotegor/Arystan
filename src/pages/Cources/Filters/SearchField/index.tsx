@@ -1,4 +1,5 @@
 import s from './styles.module.scss';
+import searchIcon from '../../../../images/search.svg';
 
 interface SearchFieldProps {
   search: string;
@@ -8,6 +9,9 @@ interface SearchFieldProps {
 export function SearchField({ search, setSearch }: SearchFieldProps) {
   return (
     <fieldset className={s.search}>
+      <span className={s.searchIcon}>
+        <img src={searchIcon} alt="search" />
+      </span>
       <input
         name="search"
         className={s.searchInput}
@@ -16,7 +20,6 @@ export function SearchField({ search, setSearch }: SearchFieldProps) {
         value={search}
         onChange={(event) => setSearch(event.target.value)}
       />
-      <button className={s.searchButton} type="submit"></button>
     </fieldset>
   );
 }

@@ -1,5 +1,5 @@
 import s from './styles.module.scss';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useDebounce } from '../../../hooks';
 import { Level, LevelField } from './LevelField';
 import { SearchField } from './SearchField';
@@ -20,7 +20,7 @@ export function Filters() {
 
   return (
     <form className={s.filters}>
-      <SearchField search={debouncedSearch} setSearch={setSearch} />
+      <SearchField search={search} setSearch={setSearch} />
       <CategoriesField categoryId={categoryId} setCategoryId={setCategoryId} />
       <LevelField currentLevel={currentLevel} setCurrentLevel={setCurrentLevel} />
     </form>

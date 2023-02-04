@@ -7,9 +7,9 @@ interface LevelFieldProps {
 }
 
 const fakeLevels: Level[] = [
-  { id: 1, name: "Базовый", color: "green" },
-  { id: 2, name: "Средний", color: "yellow" },
-  { id: 3, name: "Продвинутый", color: "red" },
+  { id: 1, name: "Базовый", color: "var(--db-level-1)" },
+  { id: 2, name: "Средний", color: "var(--db-level-2)" },
+  { id: 3, name: "Продвинутый", color: "var(--db-level-3)" },
 ];
 
 export interface Level {
@@ -19,22 +19,27 @@ export interface Level {
 }
 
 export function LevelField({ currentLevel, setCurrentLevel }: LevelFieldProps) {
-  console.log(currentLevel)
+  const backgroundColor = currentLevel === 'All' ? 'var(--black-15)' : currentLevel.color;
+
   return (
-    <select style={{background: currentLevel !== 'All' ? currentLevel.color : 'var(--black-15)'}} className={s.level} name="level">
-      <option 
-          onChange={() => setCurrentLevel('All')} 
-          selected={currentLevel === 'All'} 
+    <select
+      style={{background: backgroundColor}}
+      className={s.levels}
+      name="level"
+      onChange={(event) => setCurrentLevel(event.target.value === 'All' ? 'All' : fakeLevels.find(level => level.id === Number(event.target.value)) as Level)}
+    >
+      <option
+          onChange={() => setCurrentLevel('All')}
           value= 'All'
         >
           Все уровни
         </option>
       {fakeLevels.map(level => (
-        <option 
-          onChange={() => setCurrentLevel(level)} 
-          selected={currentLevel !== 'All' && level.id === currentLevel.id} 
+        <option
+          key={level.id}
           value={level.id}
           style={{background: level.color}}
+          className={s.levelColored}
         >
           {level.name}
         </option>

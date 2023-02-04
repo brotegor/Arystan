@@ -10,6 +10,7 @@
     }
 
     &:has(input[type=radio]:checked) {
+      color: black;
       background: var(--orange-50);
       transition: var(--hover);
     }

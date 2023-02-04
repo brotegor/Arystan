@@ -30,7 +30,7 @@ export function CategoriesField({ categoryId, setCategoryId }: CategoriesFieldPr
         Все
       </label>
       {fakeCategories.map(category => (
-        <label className={s.category}>
+        <label key={category.id} className={s.category}>
           <input
             type="radio"
             name="category"

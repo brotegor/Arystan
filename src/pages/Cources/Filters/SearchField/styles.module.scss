@@ -3,19 +3,30 @@
   width: 300px;
 }
 
+.searchIcon {
+  border-radius: 5px 0 0 5px;
+  height: 42px;
+  width: 42px;
+  box-sizing: border-box;
+  background: var(--black-15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    max-width: 65%;
+  }
+}
+
 .searchInput {
   width: 100%;
   height: 42px;
   padding-left: 10px;
-  border-radius: 5px 0 0 5px;
+  border-radius: 0 5px 5px 0;
   background: var(--black-15);
   color: white;
-}
 
-.searchButton {
-  width: 50px;
-  height: 42px;
-  background: var(--black-20);
-  border-radius: 0 5px 5px 0;
-  cursor: pointer;
+  &::placeholder {
+    color: #b1b1b1;
+  }
 }

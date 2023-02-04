@@ -1,7 +1,11 @@
-.level {
+.levels {
   margin-left: auto;
   background: var(--black-15);
   color: white;
   padding: 10px;
   border-radius: 5px;
+
+  &:has(.levelColored:checked) {
+    color: black;
+  }
 }

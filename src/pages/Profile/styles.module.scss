@@ -14,27 +14,19 @@
   left: 0;
   z-index: -1;
 }
+.button{
+  font-size: var(--font-subheading-2);
+  padding: 5px 10px;
+  margin-bottom: 35px;
+}
 
 .profileWrapper{
   position: relative;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  padding-top: 40px;
-  padding: 0 50px;
+  padding: 30px 35px ;
   box-sizing: border-box;
-}
-
-.profileImage{
-  align-self: flex-start;
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
-  background: red;
-}
-
-.button{
-  
 }
 
 .informationWrapper{
@@ -42,7 +34,22 @@
   justify-content: space-between;
 }
 
-.achivements{
+.subInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  background: var(--black-15);
+  text-align: center;
+}
+
+.infoHeading{
+  font-size: var(--font-subheading-2);
+}
+
+.activities{
   width: 49%;
   height: 300px;
   background: var(--black-15);
@@ -51,19 +58,3 @@
   border-radius: 10px;
 }
 
-.achivementsHeading{
-  font-size: var(--font-subheading-1);
-}
-
-.activity{
-  width: 49%;
-  height: 300px;
-  background: var(--black-15);
-  display: flex;
-  justify-content: center;
-  border-radius: 10px;
-}
-
-.activityHeading{
-  font-size: var(--font-subheading-1);
-}

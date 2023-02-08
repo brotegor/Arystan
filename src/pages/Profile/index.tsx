@@ -16,9 +16,10 @@ interface Achievement {
     name: string;
   };
   
-const fakeMyProfile: Profile[] = [
-    { image: 'https://sportishka.com/uploads/posts/2022-08/1661324439_28-sportishka-com-p-nakachennii-muzhik-negr-pinterest-51.jpg', name: "Bubilda" },
-];
+const fakeMyProfile: Profile = {
+    image: 'https://sportishka.com/uploads/posts/2022-08/1661324439_28-sportishka-com-p-nakachennii-muzhik-negr-pinterest-51.jpg',
+    name: "Bubilda"
+};
 
 const fakeMyAchievement: Achievement[] = [
     { id: 1, name: "Прошел тестирование" },
@@ -31,12 +32,10 @@ export function Profile() {
             <Header />
             <Container className={s.container}>
                 <div className={s.profileWrapper}>
-                    {fakeMyProfile.map(data => (
-                        <ProfileData
-                            image={data.image}
-                            name={data.name}
-                        />
-                    ))}
+                    <ProfileData
+                        image={fakeMyProfile.image}
+                        name={fakeMyProfile.name}
+                    />
                     <MainLink className={s.button} source='#' title='Настройки'/>
                     <img className={s.banner} src={background}/>
                 </div>

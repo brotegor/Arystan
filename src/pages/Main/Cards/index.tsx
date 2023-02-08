@@ -6,7 +6,7 @@ import stats from '../../../images/stats.svg';
 import flag from '../../../images/flag.svg';
 import dashboard from '../../../images/dashboard.svg';
 
-const cards: Card[] = [
+const cards: ICard[] = [
   {
     img: book,
     heading: 'Учитесь с нуля',
@@ -52,17 +52,17 @@ export function Cards() {
   );
 }
 
-interface Card {
+interface ICard {
   img: string;
   heading: string;
   description: string;
 }
 
-function Card({ img, heading, description }: Card) {
+function Card({ img, heading, description }: ICard) {
   return (
     <div className={s.card}>
       <div className={s.cardImage}>
-        <img src={img} alt="card image" />
+        <img src={img} alt="card" />
       </div>
       <div className={s.cardText}>
         <h3 className={s.cardHeading}>{heading}</h3>

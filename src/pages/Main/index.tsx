@@ -1,4 +1,3 @@
-import s from './styles.module.scss';
 import { Header } from "../../components/Header";
 import { Fullscreen } from "./Fullscreen";
 import { Cards } from './Cards';

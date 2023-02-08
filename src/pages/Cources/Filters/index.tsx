@@ -1,5 +1,5 @@
 import s from './styles.module.scss';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { useDebounce } from '../../../hooks';
 import { Level, LevelField } from './LevelField';
 import { SearchField } from './SearchField';
@@ -12,7 +12,7 @@ export function Filters() {
     то есть запрос на сервер будет отправляться не на каждое изменение значения в input,
     а только после 300мс после прекращения ввода символов в input.
   */
-  const debouncedSearch = useDebounce(search, 300);
+  // const debouncedSearch = useDebounce(search, 300);
 
   const [categoryId, setCategoryId] = useState<number | 'All'>('All');
 

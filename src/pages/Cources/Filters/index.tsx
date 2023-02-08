@@ -1,9 +1,9 @@
 import s from './styles.module.scss';
 import { useState } from 'react';
-import { useDebounce } from '../../../hooks';
 import { Level, LevelField } from './LevelField';
 import { SearchField } from './SearchField';
 import { CategoriesField } from './CategoriesField';
+// import { useDebounce } from '../../../hooks';
 
 export function Filters() {
   const [search, setSearch] = useState('');

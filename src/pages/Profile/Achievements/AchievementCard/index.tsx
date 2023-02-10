@@ -2,12 +2,14 @@ import s from './styles.module.scss';
 
 interface Props {
   name: string;
+  points: string;
 }
 
-export function AchievementCard({ name }: Props) {
+export function AchievementCard({ name, points }: Props) {
   return (
     <div className={s.achievement}>
-      {name}
+      <div>{name}</div>
+      <div>{points}</div>
     </div>
   )
 }

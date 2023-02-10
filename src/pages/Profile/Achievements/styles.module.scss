@@ -1,0 +1,12 @@
+.subInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  background: var(--black-15);
+  text-align: center;
+}
+
+.infoHeading{
+  font-size: var(--font-subheading-2);
+}

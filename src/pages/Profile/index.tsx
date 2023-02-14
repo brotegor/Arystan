@@ -13,9 +13,10 @@ interface Profile {
     name: string;
 };
   
-const fakeMyProfile: Profile[] = [
-    { image: 'https://sportishka.com/uploads/posts/2022-08/1661324439_28-sportishka-com-p-nakachennii-muzhik-negr-pinterest-51.jpg', name: "Bubilda" },
-];
+const fakeMyProfile: Profile = { 
+    image: 'https://sportishka.com/uploads/posts/2022-08/1661324439_28-sportishka-com-p-nakachennii-muzhik-negr-pinterest-51.jpg', 
+    name: "Bubilda" 
+};
 
 export function Profile() {
     return (
@@ -23,12 +24,10 @@ export function Profile() {
             <Header />
             <Container className={s.container}>
                 <div className={s.profileWrapper}>
-                    {fakeMyProfile.map(data => (
                         <ProfileData
-                            image={data.image}
-                            name={data.name}
+                            image={fakeMyProfile.image}
+                            name={fakeMyProfile.name}
                         />
-                    ))}
                     <MainLink className={s.button} source='#' title='Настройки'/>
                     <img className={s.banner} src={background}/>
                 </div>
@@ -47,5 +46,5 @@ export function Profile() {
 }
 
 export { Achievements } from '../Profile/Achievements';
-export { Activity } from '../Profile/Activity';
+export { Activity } from './Activity';
 export { Certificates } from '../Profile/Сertificates';

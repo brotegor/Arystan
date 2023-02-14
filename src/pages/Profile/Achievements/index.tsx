@@ -8,7 +8,7 @@ interface Achievement {
 };
 
 const fakeMyAchievement: Achievement[] = [
-  { id: 1, name: "Прошел тестирование", points: '+20' },
+  { id: 1, name: "Прошел тестирование", points: '+60' },
   { id: 2, name: "Начал новый курс: Базовый казахский", points: '+10' },
 ];
 

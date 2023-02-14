@@ -48,4 +48,9 @@
   text-align: center;
   font-size: var(--font-subheading-2);
   background: var(--black-10);
+
+  &[aria-current="page"] {
+    background: var(--black-15);
+    border-radius: 5px 5px 0 0;
+  }
 }

@@ -1,0 +1,32 @@
+.subInfoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: var(--black-15);
+  text-align: center;
+}
+
+.activityWrapper{
+  display: flex;
+  justify-content: space-between;
+}
+
+.infoHeading{
+  font-size: var(--font-subheading-2);
+  padding: 10px;
+}
+
+.week{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.day{
+  width: 30px;
+  height: 20px;
+  padding: 8px;
+  border-radius: 5px;
+}

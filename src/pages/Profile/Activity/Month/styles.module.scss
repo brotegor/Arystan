@@ -1,0 +1,19 @@
+.wrapper{
+  text-align: center;
+  background: var(--black-15);
+}
+
+.infoWrapper{
+  display: flex;
+  justify-content: center;
+}
+
+
+.day{
+  width: 30px;
+  height: 20px;
+  background: var(--black-10);
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}

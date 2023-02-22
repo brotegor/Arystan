@@ -4,4 +4,7 @@ export enum RouteLinks {
   REGISTRATION = '/registration',
   COURCES = '/courses',
   PROFILE = '/profile',
+  ACHIEVEMENTS = '/profile/achievements',
+  ACTIVITY = '/profile/activity',
+  CERTIFICATES = '/profile/certificates',
 }

@@ -1,0 +1,18 @@
+.subInfoWrapper{
+  background: var(--black-15);
+  padding: 20px;
+  text-align: center;
+}
+
+.cardWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.infoHeading{
+  font-size: var(--font-subheading-2);
+}

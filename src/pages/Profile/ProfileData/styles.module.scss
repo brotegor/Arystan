@@ -1,0 +1,16 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileImage{
+  align-self: flex-start;
+  width: 120px;
+  height: 120px;
+  border-radius: 100px;
+  background: red;
+  border: 6px var(--black-10) solid;
+  z-index: 2;
+}
+

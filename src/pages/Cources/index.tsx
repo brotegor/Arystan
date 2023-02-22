@@ -39,7 +39,7 @@ export function Courses(){
                 />
               ))}
           </div>
-
+          
           <h2 className={s.sectionHeading}>Прочие</h2>
           <div className={s.courcesContainer}>
               {fakeAllCourses.map(course => (

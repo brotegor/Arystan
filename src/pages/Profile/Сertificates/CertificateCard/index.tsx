@@ -4,9 +4,9 @@ interface Props {
   name: string;
 }
 
-export function AchievementCard({ name }: Props) {
+export function CertificateCard({ name }: Props) {
   return (
-    <div className={s.achievement}>
+    <div className={s.certificate}>
       {name}
     </div>
   )

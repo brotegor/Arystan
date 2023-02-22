@@ -3,7 +3,7 @@ import { RouteLinks } from '../../types';
 import { Main } from '../../pages/Main'
 import { Auth, Login, Registration } from '../../pages/Auth';
 import { Courses } from '../../pages/Cources';
-import { Profile } from '../../pages/Profile';
+import { Achievements, Activity, Certificates, Profile } from '../../pages/Profile';
 
 function App() {
   const router = createBrowserRouter([
@@ -30,7 +30,21 @@ function App() {
     },
     {
       path: RouteLinks.PROFILE,
-      element: <Profile />
+      element: <Profile />,
+      children: [
+        {
+          path: RouteLinks.ACHIEVEMENTS,
+          element: <Achievements />
+        },
+        {
+          path: RouteLinks.ACTIVITY,
+          element: <Activity />
+        },
+        {
+          path: RouteLinks.CERTIFICATES,
+          element: <Certificates />
+        }
+      ]
     },
   ]);
   

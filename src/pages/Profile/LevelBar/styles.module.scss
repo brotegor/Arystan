@@ -1,0 +1,30 @@
+.levelBar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding:20px 0 50px 0;
+}
+
+.levelValue {
+  font-size: var(--font-text);
+  margin-bottom: 5px;
+}
+
+.total {
+  width: 33.3%;
+  background-color: dimgrey;
+  height: 20px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.recieved {
+  background-color: #66c26e;
+  height: 20px;
+  border-radius: 5px;
+}
+
+.levelPoints {
+  margin-top: 5px;
+  font-size: var(--font-text);
+}
